@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Craft USB</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+   </head>
+   <body>
+    <h1>Craft USB</h1>
+    <div class="container">
+       <div class="row">
+          <form action="/run_script" method="post">
+             <button type="submit" name="payload" value="payload1">LED State</button>
+             <button type="submit" name="payload" value="payload2">Massage</button>
+             <button type="submit" name="payload" value="payload3">PowerShell</button>
+             <button type="submit" name="payload" value="payload4">Payload 4</button>
+          </form>
+       </div>
+       <div class="row">
+          <form action="/run_script" method="post">
+             <button type="submit" name="payload" value="payload5">Payload 5</button>
+             <button type="submit" name="payload" value="payload6">Payload 6</button>
+             <button type="submit" name="payload" value="payload7">Payload 7</button>
+             <button type="submit" name="payload" value="payload8">Payload 8</button>
+          </form>
+       </div>
+       <div class="row">
+          <form action="/run_script" method="post">
+             <button type="submit" name="payload" value="payload9">Payload 9</button>
+             <button type="submit" name="payload" value="payload10">Payload 10</button>
+             <button type="submit" name="payload" value="payload11">Payload 11</button>
+             <button type="submit" name="payload" value="payload12">Payload 12</button>
+          </form>
+       </div>
+       <div class="row">
+          <form action="/run_script" method="post">
+             <button type="submit" name="payload" value="payload13">Payload 13</button>
+             <button type="submit" name="payload" value="payload14">Payload 14</button>
+             <button type="submit" name="payload" value="payload15">Payload 15</button>
+             <button type="submit" name="payload" value="payload16">Payload 16</button>
+          </form>
+       </div>
+       <div class="row">
+          <form action="/run_script" method="post">
+             <button type="submit" name="payload" value="payload17">Reset</button>
+             <button type="submit" name="payload" value="payload18">Reboot</button>
+          </form>
+       </div>
+       <div class="row ad-hoc-container">
+          <h2>Ad-Hoc Network</h2>
+          <form action="/toggle_network" method="post">
+             <button type="submit" name="toggle" value="on">On</button>
+             <button type="submit" name="toggle" value="off">Off</button>
+          </form>
+       </div>
+    </div>
+    <footer>
+       <p>Powered By TotallySafe Team</p>
+    </footer>
+ </body>
+</html>

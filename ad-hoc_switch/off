@@ -1,0 +1,11 @@
+#!/bin/bash
+LED BLUE FAST
+
+cp /etc/dnsmasq.conf.orig /etc/dnsmasq.conf
+cp /etc/dhcpcd.conf.orig /etc/dhcpcd.conf
+sudo service dnsmasq stop
+sudo service hostapd stop
+sudo systemctl daemon-reload
+sudo systemctl restart dhcpcd
+
+LED GREEN ON
