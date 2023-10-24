@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Rickroll
+# Open a youtube rickroll in the victims browser
+# Target OS: 		Windows
+# AV-Detection:		no
+# Author:		Mark Schneemann
+
+# Init / Setup
+# Re-Plug yourself and start as a german keyboard
+LED SETUP
+ATTACKMODE HID
+keyboardLayout="DE"
+export keyboardLayout
+
+# Tell windows to open the rickroll
+LED ATTACK
+QUACK GUI r
+QUACK DELAY 100
+QUACK STRING "https://www.youtube.com/watch?v=DLzxrzFCyOs"
+QUACK ENTER
+LED FINISH
+QUACK DELAY 1000
+LED OFF

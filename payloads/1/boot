@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Init / Setup:
+LED SETUP
+ATTACKMODE HID
+keyboardLayout="US"
+export keyboardLayout
+
+# Tell windows to open the notepad and type the sentence:
+LED ATTACK
+QUACK GUI r
+QUACK DELAY 100
+QUACK STRING "notepad.exe"
+QUACK ENTER
+QUACK DELAY 500
+QUACK STRING "You"
+QUACK SPACE
+QUACK DELAY 500
+QUACK STRING "have"
+QUACK SPACE
+QUACK DELAY 500
+QUACK STRING "been"
+QUACK SPACE
+QUACK DELAY 1000
+QUACK STRING "hacked"
+QUACK SPACE
+QUACK DELAY 1000
+QUACK STRING "Abdulfattah :P"
+
+LED FINISH
+QUACK DELAY 1000
+LED OFF
+

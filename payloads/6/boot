@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# A small test that sets the LEDs flashing slowly.
+ATTACKMODE HID
+
+keyboardLayout="DE"
+export keyboardLayout
+
+QUACK DELAY 6000
+QUACK STRING "i am 6"
+
