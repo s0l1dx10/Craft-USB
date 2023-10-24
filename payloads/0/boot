@@ -1,0 +1,4 @@
+#!/bin/bash
+
+LED b fast
+LED g ON
